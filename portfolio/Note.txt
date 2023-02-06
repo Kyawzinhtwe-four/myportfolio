@@ -1,0 +1,35 @@
+Background color	- #070500
+secondary bg color	- #130cDD
+Primary Color		- #FFBD33
+Text Color		- #F8F8F5
+
+Header 
+	- hero			- false
+	- about			- True
+	- what i do 	- false
+	- Work			- True
+	- Education		- false
+	- exp 			- True
+	- testimonials 	- false
+	- blog 			- True
+	- contact		- True
+
+
+Font-Family		- Inter
+			  Clicker Script
+
+Sub Title		- My Name
+Main Title		- I am Web Developer
+			- I am Web Designer
+			- I am UI / UX Developer
+Description 		- 
+Skill			- HTML 100%
+			- CSS 50%
+			- Javascirpt 30%
+Project			-
+Email			-
+Ph			-
+Education		-
+Work Experience		-
+Testimonials		-
+Blog Content 		-
