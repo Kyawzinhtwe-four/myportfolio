@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <!-- Fontawesome Links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Inter:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Style Link -->
+    <link rel="stylesheet" href="./css/chart.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="sticky">
+    <header class="header">
+      <nav class="nav-group">
+        <div class="logo">My Portfolio</div>
+        <ul class="nav">
+          <li class="nav-list">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-list">
+            <a href="#work" class="nav-link">Wroks</a>
+          </li>
+          <li class="nav-list">
+            <a href="#exp" class="nav-link">My Experience</a>
+          </li>
+          <li class="nav-list">
+            <a href="#blog" class="nav-link">Blogs</a>
+          </li>
+          <li class="nav-list">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <span class="sub-heading"
+              >My Name is <span class="my-name"> Kyaw Zin Htwe</span></span
+            >
+            <h1 class="heading-primary">I am Web Developer</h1>
+            <p class="hero-description">
+              I want to create the best UI / UX design and error-free.
+            </p>
+            <a href="#" class="btn btn-full">Download CV &Darr;</a>
+          </div>
+          <div class="hero-img-box">
+            <picture>
+              <source srcset="" type="image/jpg" />
+              <source srcset="" type="image/jpg" />
+              <img class="img-hero" src="./img/myphoto.jpg" alt="My Picture" />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-about" id="about">
+        <div class="container">
+          <h2 class="heading-secondary-small-section">Who I am</h2>
+        </div>
+        <div class="container grid--about grid">
+          <p class="bio-desc">
+            <span>My name is kyaw zin htwe. I'm web developer</span>
+          </p>
+          <div class="bio-list">
+            <ul>
+              <li>
+                <p class="bio-label">Name :</p>
+                <p>Kyaw Zin Htwe</p>
+              </li>
+              <li>
+                <p class="bio-label">Email :</p>
+                <a href="mailto:kyawzinhtwewundwin@gmail.com">
+                  kyawzinhtwewundwin@gmail.com</a
+                >
+              </li>
+              <li>
+                <p class="bio-label">Age :</p>
+                <p>20</p>
+              </li>
+              <li>
+                <p class="bio-label">From :</p>
+                <address>Yangon , Myanmar</address>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-full">Download CV &Darr;</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-what-i-do">
+        <div class="container">
+          <h2 class="heading-secondary heading-center">
+            <span class="heading-underline">What I Do</span>
+          </h2>
+        </div>
+        <div class="container what-i-do-contents grid-what-i-do grid--2--col">
+          <div class="what-i-do-group">
+            <div class="what-i-do-icon">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <div class="what-i-do-content">
+              <h3 class="sub-heading">Graphic Design</h3>
+              <p>I used Adobe Indesign, photoshop.</p>
+            </div>
+          </div>
+          <div class="what-i-do-group">
+            <div class="what-i-do-icon"><i class="fa-solid fa-icons"></i></div>
+            <div class="what-i-do-content">
+              <h3 class="sub-heading">UI / UX Design</h3>
+              <p>
+                I have good view on UI / UX and can give advice to the client
+                based on experience.
+              </p>
+            </div>
+          </div>
+          <div class="what-i-do-group">
+            <div class="what-i-do-icon"><i class="fa-solid fa-globe"></i></div>
+            <div class="what-i-do-content">
+              <h3 class="sub-heading">Backend Develope</h3>
+              <p>
+                A good code base, good logic, and error-free business flows can
+                be written well.
+              </p>
+            </div>
+          </div>
+          <div class="what-i-do-group">
+            <div class="what-i-do-icon">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <div class="what-i-do-content">
+              <h3 class="sub-heading">Database Engineering</h3>
+              <p>
+                Database related to the application and connected can be
+                specially designed and easy to maintain.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <h2 class="heading-secondary heading-center">
+            <span class="heading-underline">My Skill</span>
+          </h2>
+          <div class="circle-chart-container grid grid--5--col">
+            <!-- Chart group 1 -->
+            <div class="circle-chart-group">
+              <div class="chart">
+                <div class="skill">
+                  <div class="outer">
+                    <div class="inner">
+                      <div id="number">100%</div>
+                    </div>
+                  </div>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    width="160px"
+                    height="160px"
+                  >
+                    <defs>
+                      <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#DA22FF" />
+                        <stop offset="100%" stop-color="#9733EE" />
+                      </linearGradient>
+                    </defs>
+                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                  </svg>
+                </div>
+              </div>
+              <p class="skill-name">HTML</p>
+            </div>
+            <!-- Chart group 2 -->
+            <div class="circle-chart-group">
+              <div class="chart">
+                <div class="skill">
+                  <div class="outer">
+                    <div class="inner">
+                      <div id="number">50%</div>
+                    </div>
+                  </div>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    width="160px"
+                    height="160px"
+                  >
+                    <defs>
+                      <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#DA22FF" />
+                        <stop offset="100%" stop-color="#9733EE" />
+                      </linearGradient>
+                    </defs>
+                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                  </svg>
+                </div>
+              </div>
+              <p class="skill-name">CSS</p>
+            </div>
+            <!-- Chart group 3 -->
+            <div class="circle-chart-group">
+              <div class="chart">
+                <div class="skill">
+                  <div class="outer">
+                    <div class="inner">
+                      <div id="number">30%</div>
+                    </div>
+                  </div>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    width="160px"
+                    height="160px"
+                  >
+                    <defs>
+                      <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#DA22FF" />
+                        <stop offset="100%" stop-color="#9733EE" />
+                      </linearGradient>
+                    </defs>
+                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                  </svg>
+                </div>
+              </div>
+              <p class="skill-name">Javascript</p>
+            </div>
+            <!-- Chart group 4 -->
+            <div class="circle-chart-group">
+              <div class="chart">
+                <div class="skill">
+                  <div class="outer">
+                    <div class="inner">
+                      <div id="number">10%</div>
+                    </div>
+                  </div>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    width="160px"
+                    height="160px"
+                  >
+                    <defs>
+                      <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#DA22FF" />
+                        <stop offset="100%" stop-color="#9733EE" />
+                      </linearGradient>
+                    </defs>
+                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                  </svg>
+                </div>
+              </div>
+              <p class="skill-name">React JS</p>
+            </div>
+            <!-- Chart group 5 -->
+            <div class="circle-chart-group">
+              <div class="chart">
+                <div class="skill">
+                  <div class="outer">
+                    <div class="inner">
+                      <div id="number">10%</div>
+                    </div>
+                  </div>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    width="160px"
+                    height="160px"
+                  >
+                    <defs>
+                      <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#DA22FF" />
+                        <stop offset="100%" stop-color="#9733EE" />
+                      </linearGradient>
+                    </defs>
+                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                  </svg>
+                </div>
+              </div>
+              <p class="skill-name">Vue JS</p>
+            </div>
+            <!-- Chart group 6 -->
+            <div class="circle-chart-group">
+              <div class="chart">
+                <div class="skill">
+                  <div class="outer">
+                    <div class="inner">
+                      <div id="number">30%</div>
+                    </div>
+                  </div>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    width="160px"
+                    height="160px"
+                  >
+                    <defs>
+                      <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#DA22FF" />
+                        <stop offset="100%" stop-color="#9733EE" />
+                      </linearGradient>
+                    </defs>
+                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                  </svg>
+                </div>
+              </div>
+              <p class="skill-name">Jquery</p>
+            </div>
+            <!-- Chart group 7 -->
+            <div class="circle-chart-group">
+              <div class="chart">
+                <div class="skill">
+                  <div class="outer">
+                    <div class="inner">
+                      <div id="number">30%</div>
+                    </div>
+                  </div>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    width="160px"
+                    height="160px"
+                  >
+                    <defs>
+                      <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#DA22FF" />
+                        <stop offset="100%" stop-color="#9733EE" />
+                      </linearGradient>
+                    </defs>
+                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                  </svg>
+                </div>
+              </div>
+              <p class="skill-name">Bootstrap</p>
+            </div>
+            <!-- Chart group 8 -->
+            <div class="circle-chart-group">
+              <div class="chart">
+                <div class="skill">
+                  <div class="outer">
+                    <div class="inner">
+                      <div id="number">20%</div>
+                    </div>
+                  </div>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    width="160px"
+                    height="160px"
+                  >
+                    <defs>
+                      <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#DA22FF" />
+                        <stop offset="100%" stop-color="#9733EE" />
+                      </linearGradient>
+                    </defs>
+                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                  </svg>
+                </div>
+              </div>
+              <p class="skill-name">PHP</p>
+            </div>
+            <!-- Chart group 9 -->
+            <div class="circle-chart-group">
+              <div class="chart">
+                <div class="skill">
+                  <div class="outer">
+                    <div class="inner">
+                      <div id="number">10%</div>
+                    </div>
+                  </div>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    width="160px"
+                    height="160px"
+                  >
+                    <defs>
+                      <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#DA22FF" />
+                        <stop offset="100%" stop-color="#9733EE" />
+                      </linearGradient>
+                    </defs>
+                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                  </svg>
+                </div>
+              </div>
+              <p class="skill-name">MYSQL</p>
+            </div>
+            <!-- Chart group 10 -->
+            <div class="circle-chart-group">
+              <div class="chart">
+                <div class="skill">
+                  <div class="outer">
+                    <div class="inner">
+                      <div id="number">20%</div>
+                    </div>
+                  </div>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    width="160px"
+                    height="160px"
+                  >
+                    <defs>
+                      <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#DA22FF" />
+                        <stop offset="100%" stop-color="#9733EE" />
+                      </linearGradient>
+                    </defs>
+                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                  </svg>
+                </div>
+              </div>
+              <p class="skill-name">Node.Js</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <h2 class="heading-secondary heading-center experience-title">
+            <span class="heading-underline">My Experience</span>
+          </h2>
+        </div>
+        <div class="container grid-exp grid--4--col">
+          <div class="experience-all">
+            <p class="exp-num">6</p>
+            <p class="exp-title">
+              Month Of <br />
+              Experience
+            </p>
+          </div>
+          <div class="experience-all">
+            <p class="exp-num">9</p>
+            <p class="exp-title">
+              Complete <br />
+              Project
+            </p>
+          </div>
+          <div class="experience-all">
+            <p class="exp-num">20</p>
+            <p class="exp-title">
+              Happy <br />
+              Customer
+            </p>
+          </div>
+          <div class="experience-all">
+            <p class="exp-num">10</p>
+            <p class="exp-title">
+              Award <br />
+              Won
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-work" id="work">
+        <div class="container">
+          <h2 class="heading-secondary heading-center">
+            <span class="heading-underline">My Works</span>
+          </h2>
+          <ul class="work-nav-ul">
+            <li class="work-nav-li">
+              <a href="#" class="work-nav-link active">All Project</a>
+            </li>
+            <li class="work-nav-li">
+              <a href="#" class="work-nav-link">Training Project</a>
+            </li>
+            <li class="work-nav-li">
+              <a href="#" class="work-nav-link">My Project - Web App</a>
+            </li>
+            <li class="work-nav-li">
+              <a href="#" class="work-nav-link">My Project - Website</a>
+            </li>
+          </ul>
+        </div>
+        <div class="grid-project grid--5--col">
+          <figure>
+            <img
+              class="project-img"
+              src="./img/my project img/1.jpg"
+              alt="Training"
+              style="width: 100%"
+            />
+            <figcaption class="project-capt">This is my project.</figcaption>
+          </figure>
+          <figure>
+            <img
+              class="project-img"
+              src="./img/my project img/2.png"
+              alt="Training"
+              style="width: 100%"
+            />
+            <figcaption class="project-capt">This is my project.</figcaption>
+          </figure>
+          <figure>
+            <img
+              class="project-img"
+              src="./img/my project img/3.png"
+              alt="Training"
+              style="width: 100%"
+            />
+            <figcaption class="project-capt">This is my project.</figcaption>
+          </figure>
+          <figure>
+            <img
+              class="project-img"
+              src="./img/my project img/4.jpg"
+              alt="Training"
+              style="width: 100%"
+            />
+            <figcaption class="project-capt">This is my project.</figcaption>
+          </figure>
+          <figure>
+            <img
+              class="project-img"
+              src="./img/my project img/5.webp"
+              alt="Training"
+              style="width: 100%"
+            />
+            <figcaption class="project-capt">This is my project.</figcaption>
+          </figure>
+          <figure>
+            <img
+              class="project-img"
+              src="./img/my project img/6.jpg"
+              alt="Training"
+              style="width: 100%"
+            />
+            <figcaption class="project-capt">This is my project.</figcaption>
+          </figure>
+          <figure>
+            <img
+              class="project-img"
+              src="./img/my project img/7.jpg"
+              alt="Training"
+              style="width: 100%"
+            />
+            <figcaption class="project-capt">This is my project.</figcaption>
+          </figure>
+          <figure>
+            <img
+              class="project-img"
+              src="./img/my project img/8.png"
+              alt="Training"
+              style="width: 100%"
+            />
+            <figcaption class="project-capt">This is my project.</figcaption>
+          </figure>
+          <figure>
+            <img
+              class="project-img"
+              src="./img/my project img/9.png"
+              alt="Training"
+              style="width: 100%"
+            />
+            <figcaption class="project-capt">This is my project.</figcaption>
+          </figure>
+          <figure>
+            <img
+              class="project-img"
+              src="./img/my project img/10.webp"
+              alt="Training"
+              style="width: 100%"
+            />
+            <figcaption class="project-capt">This is my project.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-edu">
+        <div class="container">
+          <h2 class="heading-secondary">My Education</h2>
+        </div>
+        <div class="container grid grid--2--col">
+          <div class="edu-group">
+            <div class="edu-icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="edu-contents">
+              <div class="edu-year">2017 - 2018</div>
+              <div class="edu-title">Basic Education</div>
+              <div class="edu-desc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
+                odio sequi aliquid doloribus itaque, beatae vitae, doloremque
+                repellat ducimus atque reiciendis excepturi, ab eaque aut quia
+                totam. Mollitia, sunt nobis.
+              </div>
+            </div>
+          </div>
+
+          <div class="edu-group">
+            <div class="edu-icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="edu-contents">
+              <div class="edu-year">2022 - 2023</div>
+              <div class="edu-title">BA (Geog) (2nd years)</div>
+              <div class="edu-desc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
+                odio sequi aliquid doloribus itaque, beatae vitae, doloremque
+                repellat ducimus atque reiciendis excepturi, ab eaque aut quia
+                totam. Mollitia, sunt nobis.
+              </div>
+            </div>
+          </div>
+
+          <div class="edu-group">
+            <div class="edu-icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="edu-contents">
+              <div class="edu-year">2021 - 2022</div>
+              <div class="edu-title">Certificate For Front End Developer</div>
+              <div class="edu-desc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
+                odio sequi aliquid doloribus itaque, beatae vitae, doloremque
+                repellat ducimus atque reiciendis excepturi, ab eaque aut quia
+                totam. Mollitia, sunt nobis.
+              </div>
+            </div>
+          </div>
+
+          <div class="edu-group">
+            <div class="edu-icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="edu-contents">
+              <div class="edu-year">2021 - 2022</div>
+              <div class="edu-title">Certificate For Office</div>
+              <div class="edu-desc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
+                odio sequi aliquid doloribus itaque, beatae vitae, doloremque
+                repellat ducimus atque reiciendis excepturi, ab eaque aut quia
+                totam. Mollitia, sunt nobis.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-exp" id="exp">
+        <div class="container">
+          <h2 class="heading-secondary">My Experiences</h2>
+        </div>
+        <div class="container grid grid--3--col">
+          <div class="exp-group">
+            <div class="exp-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="exp-contents">
+              <div class="exp-year">2020 - 2021</div>
+              <div class="exp-head">Computer Training</div>
+              <div class="exp-desc">Position &mdash; Computer Instructor</div>
+            </div>
+          </div>
+          <div class="exp-group">
+            <div class="exp-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="exp-contents">
+              <div class="exp-year">2021 - 2022</div>
+              <div class="exp-head">Software Company</div>
+              <div class="exp-desc">Position &mdash; Junior Web Developer</div>
+            </div>
+          </div>
+          <div class="exp-group">
+            <div class="exp-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="exp-contents">
+              <div class="exp-year">2021 - 2022</div>
+              <div class="exp-head">Hillman Land</div>
+              <div class="exp-desc">Position &mdash; Network Engineer</div>
+            </div>
+          </div>
+          <div class="exp-group">
+            <div class="exp-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="exp-contents">
+              <div class="exp-year">2022 - 2023</div>
+              <div class="exp-head">Kalaw Cherry</div>
+              <div class="exp-desc">Position &mdash; Personal Assistant</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-testimonial">
+        <div class="container">
+          <h2 class="heading-secondary heading-center">
+            <span>Testimonial</span>
+          </h2>
+        </div>
+        <div
+          class="container testimonial-contents grid-testimonial grid--2--col"
+        >
+          <div class="test-contents-all">
+            <div class="testimonial-group">
+              <div class="testimonial-photo">
+                <img
+                  class="testimonial-img"
+                  src="./img/testimonial/1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="testimonial-content">
+                <p class="client-name">Stave Roja</p>
+                <span class="position">CEO &mdash; Microsoft</span>
+              </div>
+            </div>
+            <div class="testimonial-desc">
+              <p class="test-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+                totam necessitatibus modi tempora esse consectetur accusantium
+                doloribus quas illo est voluptatem maxime sint cumque pariatur.
+                Qui provident ea voluptatum est!
+              </p>
+              <div class="rating-group">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="test-contents-all">
+            <div class="testimonial-group">
+              <div class="testimonial-photo">
+                <img
+                  class="testimonial-img"
+                  src="./img/testimonial/2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="testimonial-content">
+                <p class="client-name">Stave Roja</p>
+                <span class="position">CEO &mdash; Microsoft</span>
+              </div>
+            </div>
+            <div class="testimonial-desc">
+              <p class="test-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+                totam necessitatibus modi tempora esse consectetur accusantium
+                doloribus quas illo est voluptatem maxime sint cumque pariatur.
+                Qui provident ea voluptatum est!
+              </p>
+              <div class="rating-group">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-blog" id="blog">
+        <div class="container">
+          <h2 class="heading-secondary heading-center">
+            <span>My Blog</span>
+          </h2>
+        </div>
+        <div class="container grid grid--3--col">
+          <div class="blog-group">
+            <div class="blog-image">
+              <img src="./img/blog/1.jpg" alt="" class="img-blog" />
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">Hello</h3>
+              <p class="blog-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                repudiandae dolore vero praesentium quaerat, ullam, dolorum,
+                saepe vel velit tempora alias unde eveniet animi iste quod
+                similique molestias ratione voluptatibus!
+              </p>
+            </div>
+          </div>
+          <div class="blog-group">
+            <div class="blog-image">
+              <img src="./img/blog/2.jpg" alt="" class="img-blog" />
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">Hello</h3>
+              <p class="blog-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                repudiandae dolore vero praesentium quaerat, ullam, dolorum,
+                saepe vel velit tempora alias unde eveniet animi iste quod
+                similique molestias ratione voluptatibus!
+              </p>
+            </div>
+          </div>
+          <div class="blog-group">
+            <div class="blog-image">
+              <img src="./img/blog/3.jpg" alt="" class="img-blog" />
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">Hello</h3>
+              <p class="blog-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                repudiandae dolore vero praesentium quaerat, ullam, dolorum,
+                saepe vel velit tempora alias unde eveniet animi iste quod
+                similique molestias ratione voluptatibus!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-contact" id="contact">
+        <div class="container">
+          <h2 class="heading-secondary heading-center">
+            <span>Get In Touch</span>
+          </h2>
+        </div>
+        <div class="container grid grid-contact">
+          <div class="contact-group">
+            <h3 class="contact-title">Don't be shy !</h3>
+            <p class="contact-desc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
+              harum saepe voluptatibus possimus.
+            </p>
+            <div class="mail-group">
+              <div class="mail-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="mail-contacts">
+                <div class="mail-title">Mail Me</div>
+                <div class="mail">
+                  <a href="mailto:kyawzinhtwewundwin@gmail.com">
+                    kyawzinhtwewundwin@gmail.com</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="ph-group">
+              <div class="ph-icon">
+                <i class="fa-sharp fa-solid fa-phone"></i>
+              </div>
+              <div class="ph-contacts">
+                <div class="ph-title">Call Me</div>
+                <div class="ph"><a href="tel: 09894293724">09894293724</a></div>
+              </div>
+            </div>
+            <div class="social-group">
+              <ul>
+                <li>
+                  <a href="#" class="social-link"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="social-link"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="social-link"
+                    ><i class="fa-brands fa-square-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="social-link"
+                    ><i class="fa-brands fa-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="input-group">
+            <form class="form-input">
+              <div class="first-row">
+                <input type="text" placeholder="Your Nmae" />
+                <input type="text" placeholder="Your Email" />
+                <input type="text" placeholder="Your Subject" />
+              </div>
+              <div class="sec-row">
+                <textarea name=""></textarea>
+              </div>
+              <div class="thi-row">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Fontawesome Link -->
+    <script>
+        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+        integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      >
+    </script>
+    <!-- Script Js File -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
+
+<!-- ========================================== -->
